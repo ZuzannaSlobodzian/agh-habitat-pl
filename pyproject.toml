@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "habitat-pl"
+version = "0.1.0"
+description = "Template project for AGH Machine Learning for Space Applications"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "earthengine-api>=1.1.0",
+  "geemap>=0.32.0",
+  "numpy",
+  "pandas",
+  "geopandas",
+  "shapely"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
