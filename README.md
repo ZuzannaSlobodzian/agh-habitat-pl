@@ -4,20 +4,38 @@
 ---
 
 ## 🎯 Project goal
-Students will build an **AI pipeline to classify natural habitats across Poland** using **Google Satellite Embeddings** and open geospatial reference data (e.g., CORINE, Natura 2000).  
+Build an **AI pipeline to classify natural habitats across Poland** using **Google Satellite Embeddings** and open geospatial reference data (e.g., CORINE, Natura 2000).  
 Each lab adds one methodological layer — from data access to deep learning and spatial validation.
 
 ---
 
-## 🧪 Lab 1 — Data Access & Visualization
+## Lab 1: Setup, authentication, data access
 
-**Objective:**  
-Learn to authenticate Google Earth Engine (GEE) via the Python API (in Colab),  
-load the *Satellite Embedding V1* dataset, clip it to Poland, visualize the embeddings as pseudo-RGB,  
-and explore their structure through simple projections.
+*Google Colab Notebook:* https://colab.research.google.com/drive/1kdSxB3m3NTL4booz-w8FoCI7YFzpxDWU?usp=sharing
 
----
+*Datasets*
 
-### 🧰 Environment setup (Colab)
-```python
-!pip install -q git+https://github.com/<your-team>/agh-habitat-pl.git
+1.   Google Satellite Embeddings
+2.   CORINE 2018
+
+*Requirements*
+
+- Google account (provide Google email to instructor)
+- Github account
+- Github access token
+
+*Setup and authentication steps*
+
+- Clone Github repository
+- Check out template repository into Google Colab
+- Generate Github access token
+- Setup GITHUB_TOKEN in Secrets
+- Varify access to Google Earth Engine
+- Visualize datasets
+
+*Objectives*
+
+1. Define two AOIs for well distinct, well defined surface classes
+2. Download Google Sat Embeddings for the defined AOIs
+3. Apply unsupervised clustering of the embeddings using 4 different clustering methods
+4. Visualise and document the results
